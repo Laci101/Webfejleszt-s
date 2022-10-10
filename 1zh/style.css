@@ -1,0 +1,41 @@
+body{
+    background-color: antiquewhite;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.selection{
+    border: none;
+    cursor: pointer;
+    background: none;
+    transition: 200ms;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.selection:hover{
+    transform: scale(1.1);
+}
+
+.results {
+    margin-top: 2rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.result-selection {
+    opacity: .5;
+  }
+  
+  .result-selection.winner {
+    opacity: 1;
+    font-size: 1.5rem;
+  }
